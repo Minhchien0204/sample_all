@@ -7,4 +7,7 @@ class LayoutsController < ApplicationController
 
   def _shim
   end
+
+  def _rails_default
+  end
 end
