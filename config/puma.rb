@@ -3,7 +3,7 @@ threads_count = Integer(ENV['RAILS_MAX_THREADS'] || 5)
 threads threads_count, threads_count
 
 preload_app!
-web: bundle exec puma -C config/puma.rb
+#web: bundle exec puma -C config/puma.rb
 
 rackup      DefaultRackup
 port        ENV['PORT']     || 3000
