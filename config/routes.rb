@@ -17,5 +17,6 @@ Rails.application.routes.draw do
   get	'layouts/_rails_default'
   get	'layouts/_shim'
   resources :users
+  resources :account_activations, only: [:edit]
 
 end
