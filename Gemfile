@@ -14,6 +14,9 @@ gem 'faker',          '1.9.3'
 gem 'will_paginate',           '3.1.7'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'bootstrap-sass', '3.3.7'
+gem 'carrierwave',             '1.3.1'
+gem 'mini_magick',             '4.9.3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -44,6 +47,11 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+end
+
+group :production do
+  #gem 'pg',  '1.1.4'
+  gem 'fog', '2.1.0'
 end
 
 group :development do
